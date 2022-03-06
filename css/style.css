@@ -1,0 +1,139 @@
+/* Every selector you need to work with has been placed at the top */
+
+#box-a {
+    border: 1px solid black;
+}
+#box-a:hover{
+    border: 5px dashed purple;
+    transition: none;
+}
+
+#box-b {
+    border: 1px solid black;
+}
+#box-b:active{
+    background-color: magenta;
+    transition: ease-in-out;
+}
+
+#box-c {
+    border: 1px solid black;
+}
+#box-c:active{
+    color: red;
+    font-size: 24px;
+    transition: color ease-out, size ease-in 2s;
+}
+
+#box-d {
+    border: 1px solid black;
+    overflow: hidden;
+}
+#box-d:active{
+    border-radius: 50%;
+    transition: ease-in 2s;
+}
+
+#box-e {
+    border: 1px solid black;
+    transition: padding-top 5s ease;
+}
+#box-e:hover{
+    padding-top: 100px;
+    transition: ease 5s;
+}
+
+
+#box-f {
+    border: 1px solid black;
+    transition: color 2s, background-color 4s, border 3s;
+}
+#box-f:hover{
+    border: 4px solid black;
+    color: red;
+    background-color: green;
+    transition: color 2s border 3s background-color 4s;
+}
+
+
+.nav-button {
+    padding: 10px 0;
+    border: 1px solid black;
+    
+}
+.nav-button p:hover{
+    background-color: grey;
+}
+
+
+#middle-container > p {
+    border: 1px solid black;
+    padding-top: 30px;
+}
+#middle-container p:nth-child(2n){
+    background-color:red;
+}
+
+
+
+/* You don't need to touch this code for the homework */
+/* ------------------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Navigation */
+nav {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+
+
+/* Bottom Container */
+
+#bottom-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 1000px;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: 37.5% 25% 37.5%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Left Container */
+#left-container {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* Middle Container */
+#middle-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+
+/* Right Container */
+#right-container {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
